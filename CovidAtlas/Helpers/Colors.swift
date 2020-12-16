@@ -25,6 +25,7 @@ struct Colors {
     
     struct Card {
         static let shadow = Color.black.opacity(0.5)
+        static let chevron = Color.gray
     }
     
     struct Checkmark {

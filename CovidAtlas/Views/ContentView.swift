@@ -10,9 +10,13 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        MainContainer()
-            .ignoresSafeArea()
-            .background(Colors.secondary)
+        ZStack {
+            Colors.secondaryGradient
+            MainContainer()
+                .ignoresSafeArea()
+                .background(Colors.secondaryGradient)
+        }.ignoresSafeArea()
+        
     }
 }
 

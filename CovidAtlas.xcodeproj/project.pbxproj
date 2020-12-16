@@ -29,6 +29,10 @@
 		08857AD9258A033E00AA16FB /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AD8258A033E00AA16FB /* MainContainer.swift */; };
 		08857ADD258A0E4800AA16FB /* CheckListType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857ADC258A0E4800AA16FB /* CheckListType.swift */; };
 		08857AE0258A1EC000AA16FB /* RichText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857ADF258A1EC000AA16FB /* RichText.swift */; };
+		08857AE7258A1F9300AA16FB /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AE6258A1F9300AA16FB /* StringExtensions.swift */; };
+		08857AF0258A205800AA16FB /* BuildingAccessCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AEF258A205800AA16FB /* BuildingAccessCard.swift */; };
+		08857AF3258A208900AA16FB /* BuildingAccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AF2258A208900AA16FB /* BuildingAccessViewModel.swift */; };
+		08857AF7258A2B5700AA16FB /* RetakeAttestation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AF6258A2B5700AA16FB /* RetakeAttestation.swift */; };
 		08F1D0E225862F9700E12FEB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1D0E125862F9700E12FEB /* ModelData.swift */; };
 		08F1D0E525862FB900E12FEB /* getVaccineElectionStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 08F1D0E425862FB900E12FEB /* getVaccineElectionStatus.json */; };
 		08F1D0EE2586323D00E12FEB /* VaccineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1D0ED2586323D00E12FEB /* VaccineCard.swift */; };
@@ -62,6 +66,10 @@
 		08857AD8258A033E00AA16FB /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
 		08857ADC258A0E4800AA16FB /* CheckListType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListType.swift; sourceTree = "<group>"; };
 		08857ADF258A1EC000AA16FB /* RichText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RichText.swift; sourceTree = "<group>"; };
+		08857AE6258A1F9300AA16FB /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		08857AEF258A205800AA16FB /* BuildingAccessCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingAccessCard.swift; sourceTree = "<group>"; };
+		08857AF2258A208900AA16FB /* BuildingAccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildingAccessViewModel.swift; sourceTree = "<group>"; };
+		08857AF6258A2B5700AA16FB /* RetakeAttestation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetakeAttestation.swift; sourceTree = "<group>"; };
 		08F1D0E125862F9700E12FEB /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		08F1D0E425862FB900E12FEB /* getVaccineElectionStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getVaccineElectionStatus.json; sourceTree = "<group>"; };
 		08F1D0ED2586323D00E12FEB /* VaccineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineCard.swift; sourceTree = "<group>"; };
@@ -127,12 +135,12 @@
 		084885A725824F9D000BA77B /* CovidAtlas */ = {
 			isa = PBXGroup;
 			children = (
-				08857AE2258A1EE100AA16FB /* New Group */,
 				084885A825824F9D000BA77B /* CovidAtlasApp.swift */,
 				08F1D0D2258626C100E12FEB /* Views */,
 				08F1D0E025862F0900E12FEB /* Model */,
 				08F1D0F42586467800E12FEB /* Helpers */,
 				08F1D0D325862AE200E12FEB /* Resources */,
+				08857AE2258A1EE100AA16FB /* Extensions */,
 				084885B125824F9F000BA77B /* Info.plist */,
 				084885AE25824F9F000BA77B /* Preview Content */,
 			);
@@ -158,21 +166,47 @@
 			path = CheckList;
 			sourceTree = "<group>";
 		};
-		08857AE2258A1EE100AA16FB /* New Group */ = {
+		08857AE2258A1EE100AA16FB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				08857AE6258A1F9300AA16FB /* StringExtensions.swift */,
 			);
-			path = "New Group";
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		08857AE9258A202100AA16FB /* BuildingAccess */ = {
+			isa = PBXGroup;
+			children = (
+				08857AEF258A205800AA16FB /* BuildingAccessCard.swift */,
+				08857AF2258A208900AA16FB /* BuildingAccessViewModel.swift */,
+			);
+			path = BuildingAccess;
+			sourceTree = "<group>";
+		};
+		08857AF5258A2B3700AA16FB /* RetakeAttestation */ = {
+			isa = PBXGroup;
+			children = (
+				08857AF6258A2B5700AA16FB /* RetakeAttestation.swift */,
+			);
+			path = RetakeAttestation;
+			sourceTree = "<group>";
+		};
+		08AA492A258A4FDC0052548A /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				08857AD8258A033E00AA16FB /* MainContainer.swift */,
+				08857ACD2589FD9000AA16FB /* CheckList */,
+				08F1D0F92587427000E12FEB /* Common */,
+				08F1D0D525862B1A00E12FEB /* Cards */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 		08F1D0D2258626C100E12FEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				084885AA25824F9D000BA77B /* ContentView.swift */,
-				08857AD8258A033E00AA16FB /* MainContainer.swift */,
-				08857ACD2589FD9000AA16FB /* CheckList */,
-				08F1D0F92587427000E12FEB /* Common */,
-				08F1D0D525862B1A00E12FEB /* Cards */,
+				08AA492A258A4FDC0052548A /* Dashboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +229,8 @@
 				081D38952587CF3D003359BD /* CovidPass */,
 				081D38902587C9A7003359BD /* VaccineElection */,
 				081D389D2587D4AB003359BD /* Medical */,
+				08857AE9258A202100AA16FB /* BuildingAccess */,
+				08857AF5258A2B3700AA16FB /* RetakeAttestation */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -322,6 +358,9 @@
 				081D38882587C76D003359BD /* VaccineElectionStatus.swift in Sources */,
 				08857AD32589FDCB00AA16FB /* CheckListViewModel.swift in Sources */,
 				081D38852587C763003359BD /* CovidAccessStatus.swift in Sources */,
+				08857AE7258A1F9300AA16FB /* StringExtensions.swift in Sources */,
+				08857AF3258A208900AA16FB /* BuildingAccessViewModel.swift in Sources */,
+				08857AF0258A205800AA16FB /* BuildingAccessCard.swift in Sources */,
 				081D38932587C9DD003359BD /* VaccineCardViewModel.swift in Sources */,
 				081D38A32587D922003359BD /* MedicalCardViewModel.swift in Sources */,
 				081D388E2587C785003359BD /* BuildingAccessList.swift in Sources */,
@@ -329,6 +368,7 @@
 				08857ADD258A0E4800AA16FB /* CheckListType.swift in Sources */,
 				084885A925824F9D000BA77B /* CovidAtlasApp.swift in Sources */,
 				08F1D103258742A300E12FEB /* CButtonStyle.swift in Sources */,
+				08857AF7258A2B5700AA16FB /* RetakeAttestation.swift in Sources */,
 				081D38A02587D917003359BD /* MedicalCard.swift in Sources */,
 				08857AE0258A1EC000AA16FB /* RichText.swift in Sources */,
 				08857AD62589FE6700AA16FB /* CheckListItem.swift in Sources */,
