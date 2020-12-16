@@ -23,8 +23,9 @@ struct VaccineCard: View {
             }
             
             Text(viewModel.text(for: status))
-                .padding()
                 .modifier(CTextStyle())
+                .lineLimit(nil)
+                .padding()
             
             if viewModel.shouldShowButton(for: status) {                
                 HStack {

@@ -20,10 +20,14 @@ struct Colors {
     }
     
     struct Text {
-        static let textColor = Color.white
+        static let primaryTextColor = Color.white
     }
     
     struct Card {
         static let shadow = Color.black.opacity(0.5)
+    }
+    
+    struct Checkmark {
+        static let background = Color.white
     }
 }

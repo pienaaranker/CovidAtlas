@@ -23,6 +23,10 @@
 		084885AB25824F9D000BA77B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084885AA25824F9D000BA77B /* ContentView.swift */; };
 		084885AD25824F9F000BA77B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084885AC25824F9F000BA77B /* Assets.xcassets */; };
 		084885B025824F9F000BA77B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 084885AF25824F9F000BA77B /* Preview Assets.xcassets */; };
+		08857ACF2589FDBB00AA16FB /* CheckList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857ACE2589FDBB00AA16FB /* CheckList.swift */; };
+		08857AD32589FDCB00AA16FB /* CheckListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AD22589FDCB00AA16FB /* CheckListViewModel.swift */; };
+		08857AD62589FE6700AA16FB /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AD52589FE6700AA16FB /* CheckListItem.swift */; };
+		08857AD9258A033E00AA16FB /* MainContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08857AD8258A033E00AA16FB /* MainContainer.swift */; };
 		08F1D0E225862F9700E12FEB /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1D0E125862F9700E12FEB /* ModelData.swift */; };
 		08F1D0E525862FB900E12FEB /* getVaccineElectionStatus.json in Resources */ = {isa = PBXBuildFile; fileRef = 08F1D0E425862FB900E12FEB /* getVaccineElectionStatus.json */; };
 		08F1D0EE2586323D00E12FEB /* VaccineCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08F1D0ED2586323D00E12FEB /* VaccineCard.swift */; };
@@ -50,6 +54,10 @@
 		084885AC25824F9F000BA77B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		084885AF25824F9F000BA77B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		084885B125824F9F000BA77B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08857ACE2589FDBB00AA16FB /* CheckList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckList.swift; sourceTree = "<group>"; };
+		08857AD22589FDCB00AA16FB /* CheckListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListViewModel.swift; sourceTree = "<group>"; };
+		08857AD52589FE6700AA16FB /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
+		08857AD8258A033E00AA16FB /* MainContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainContainer.swift; sourceTree = "<group>"; };
 		08F1D0E125862F9700E12FEB /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		08F1D0E425862FB900E12FEB /* getVaccineElectionStatus.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getVaccineElectionStatus.json; sourceTree = "<group>"; };
 		08F1D0ED2586323D00E12FEB /* VaccineCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineCard.swift; sourceTree = "<group>"; };
@@ -134,10 +142,22 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		08857ACD2589FD9000AA16FB /* CheckList */ = {
+			isa = PBXGroup;
+			children = (
+				08857ACE2589FDBB00AA16FB /* CheckList.swift */,
+				08857AD22589FDCB00AA16FB /* CheckListViewModel.swift */,
+				08857AD52589FE6700AA16FB /* CheckListItem.swift */,
+			);
+			path = CheckList;
+			sourceTree = "<group>";
+		};
 		08F1D0D2258626C100E12FEB /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				084885AA25824F9D000BA77B /* ContentView.swift */,
+				08857AD8258A033E00AA16FB /* MainContainer.swift */,
+				08857ACD2589FD9000AA16FB /* CheckList */,
 				08F1D0F92587427000E12FEB /* Common */,
 				08F1D0D525862B1A00E12FEB /* Cards */,
 			);
@@ -281,9 +301,12 @@
 				08F1D0F7258647CF00E12FEB /* Colors.swift in Sources */,
 				081D389B2587CF78003359BD /* CovidPassViewModel.swift in Sources */,
 				08F1D0E225862F9700E12FEB /* ModelData.swift in Sources */,
+				08857ACF2589FDBB00AA16FB /* CheckList.swift in Sources */,
+				08857AD9258A033E00AA16FB /* MainContainer.swift in Sources */,
 				08F1D10C25874DCE00E12FEB /* CTextStyle.swift in Sources */,
 				08F1D0EE2586323D00E12FEB /* VaccineCard.swift in Sources */,
 				081D38882587C76D003359BD /* VaccineElectionStatus.swift in Sources */,
+				08857AD32589FDCB00AA16FB /* CheckListViewModel.swift in Sources */,
 				081D38852587C763003359BD /* CovidAccessStatus.swift in Sources */,
 				081D38932587C9DD003359BD /* VaccineCardViewModel.swift in Sources */,
 				081D38A32587D922003359BD /* MedicalCardViewModel.swift in Sources */,
@@ -292,6 +315,7 @@
 				084885A925824F9D000BA77B /* CovidAtlasApp.swift in Sources */,
 				08F1D103258742A300E12FEB /* CButtonStyle.swift in Sources */,
 				081D38A02587D917003359BD /* MedicalCard.swift in Sources */,
+				08857AD62589FE6700AA16FB /* CheckListItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

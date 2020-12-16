@@ -17,7 +17,7 @@ struct CovidPass: View {
                 Text(CovidPassViewModel.Strings.title)
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(Colors.Text.textColor)
+                    .foregroundColor(Colors.Text.primaryTextColor)
                 
                 Text(viewModel.statusText(for: status))
                     .font(.footnote)
@@ -25,7 +25,7 @@ struct CovidPass: View {
                     .padding([.leading, .trailing], 10)
                     .padding([.top, .bottom], 5)
                     .background(Colors.primary)
-                    .foregroundColor(Colors.Text.textColor)
+                    .foregroundColor(Colors.Text.primaryTextColor)
                     .cornerRadius(5)
                     
                     

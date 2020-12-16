@@ -12,6 +12,6 @@ struct CTextStyle: ViewModifier {
     func body(content: Content) -> some View {
             content
                 .font(.body)
-                .foregroundColor(Colors.Text.textColor)
+                .foregroundColor(Colors.Text.primaryTextColor)
         }
 }

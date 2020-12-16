@@ -10,18 +10,9 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        ScrollView {
-            VStack {                
-                    CovidPass(status: ModelData().covidAccessStatus)
-                        .padding(.bottom, 8)
-                    VaccineCard(status: ModelData().vaccineElectionStatus)
-                    MedicalCard()
-            }
-        }
-        .background(LinearGradient(gradient: Gradient(colors: [Colors.secondary, Colors.secondaryGradient]), startPoint: .topLeading, endPoint: .bottomTrailing))
-        .ignoresSafeArea()
-        
-        
+        MainContainer()
+            .ignoresSafeArea()
+            .background(Colors.secondary)
     }
 }
 
