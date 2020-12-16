@@ -1,0 +1,18 @@
+
+[
+    {
+        "id": 0,
+        "name": "Trump Tower",
+        "expiryDate": "15-06-2020T19:35"
+    },
+    {
+        "id": 1,
+        "name": "Pentagon",
+        "expiryDate": "15-06-2020T19:35"
+    },
+    {
+        "id": 2,
+        "name": "The White House",
+        "expiryDate": "15-06-2020T19:35"
+    }
+]
