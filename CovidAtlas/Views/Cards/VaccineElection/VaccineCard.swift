@@ -24,7 +24,6 @@ struct VaccineCard: View {
             
             Text(viewModel.text(for: status))
                 .modifier(CTextStyle())
-                .lineLimit(nil)
                 .padding()
             
             if viewModel.shouldShowButton(for: status) {                

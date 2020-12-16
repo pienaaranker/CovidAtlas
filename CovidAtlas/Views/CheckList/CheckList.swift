@@ -11,16 +11,16 @@ struct CheckList: View {
     let viewModel = CheckListViewModel()
     
     var body: some View {
-        HStack {
+        HStack(alignment: .top) {
             Spacer()
-            CheckListItem(title: "Acknowledge Form", isComplete: true)
-            CheckListItem(title: "Training", isComplete: true)
-            CheckListItem(title: "Medical", isComplete: false)
-            CheckListItem(title: "Attest", isComplete: true)
+            CheckListItem(type: .acknowledgeForm, isComplete: true)
+            CheckListItem(type: .training, isComplete: true)
+            CheckListItem(type: .medical, isComplete: false)
+            CheckListItem(type: .attest, isComplete: true)
             Spacer()
         }
+        .frame(height: 160)
         .background(Colors.secondaryGradient)
-        .ignoresSafeArea()
     }
 }
 

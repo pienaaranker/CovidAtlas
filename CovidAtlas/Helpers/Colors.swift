@@ -28,6 +28,9 @@ struct Colors {
     }
     
     struct Checkmark {
+        static let imageColorComplete = Colors.secondaryGradient
+        static let imageColorInComplete = Color.white
         static let background = Color.white
+        static let shadow = Color.black.opacity(0.5)
     }
 }
