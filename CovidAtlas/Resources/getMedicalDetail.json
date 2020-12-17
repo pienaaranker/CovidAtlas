@@ -1,0 +1,26 @@
+
+{
+    "startDate" : "Dec 24",
+    "endDate" : "Jan 5",
+    "name": "John Smith",
+    "events": [
+        {
+            "id": 0,
+            "displayableDate": "Today",
+            "title" : "Medical Trailer",
+            "openTime" : "9:00am",
+            "closeTime": "4:00pm",
+            "waitTime" : "15min"
+            
+        },
+        {
+            "id" : 1,
+            "displayableDate": "Tomorrow",
+            "title" : "Other Event",
+            "openTime" : "8:00am",
+            "closeTime": "5:00pm",
+            "waitTime" : "10min"
+            
+        }
+    ]
+}

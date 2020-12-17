@@ -13,6 +13,7 @@ final class ModelData: ObservableObject {
     @Published var vaccineElectionStatus: VaccineElectionStatus = load("getVaccineElectionStatus.json")
     var buildingAccessStatus: BuildingAccessStatus = load("getBuildingAccessStatus.json")
     var buildingAccessList: BuildingAccessList = load("getBuildingAccessList.json")
+    var medicalData: MedicalDataReponse = load("getMedicalDetail.json")
 }
 
 func load<T: Decodable>(_ filename: String) -> T {

@@ -20,11 +20,15 @@ struct MedicalCard: View {
             
             HStack {
                 Spacer()
-                Button(MedicalCardViewModel.Strings.buttonText) {
-                    print("button pressed")
+                NavigationLink(
+                    destination: MedicalDetail(details: ModelData().medicalData)) {
+                    Text(MedicalCardViewModel.Strings.buttonText)
+                        .foregroundColor(Colors.Button.textColor)
+                        .frame(height: 44)
+                        .padding([.leading, .trailing], 30)
                 }
-                .padding([.leading, .trailing], 30)
-                .buttonStyle(CButtonStyle())
+                
+                
                 Spacer()
             }
             .background(Colors.Button.background)

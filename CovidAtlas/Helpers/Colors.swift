@@ -28,6 +28,10 @@ struct Colors {
         static let chevron = Color.gray
     }
     
+    struct Event {
+        static let background = Color.black.opacity(0.2)
+    }
+    
     struct Checkmark {
         static let imageColorComplete = Colors.secondaryGradient
         static let imageColorInComplete = Color.white
