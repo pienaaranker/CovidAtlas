@@ -8,20 +8,12 @@
 import SwiftUI
 
 struct MedicalDetail: View {
-    var details: MedicalDataReponse
-//    init(details: MedicalDataReponse) {
-//        let navBarAppearance = UINavigationBar.appearance()
-//        navBarAppearance.backgroundColor = UIColor(cgColor: Colors.primaryGradient.cgColor!)
-//        navBarAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-//        navBarAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-//        self.details = details
-//    }
-    
+    var details: MedicalDataReponse    
     
     var body: some View {
             ZStack {
                 Colors.primaryGradient.edgesIgnoringSafeArea(.all)
-                VStack {                    
+                VStack(spacing: 0) {
                     ScrollView {
                         VStack(spacing: 0.0) {
                             Image("shield_check")
@@ -50,7 +42,7 @@ struct MedicalDetail: View {
                                 }
                                 .padding()
                                 HStack {
-                                    Text("View all testing location, hours of operation and availibilty")
+                                    Text(MedicalDetailViewModel.Strings.availibilityText)
                                         .modifier(CTextStyle())
                                     Image(systemName: "chevron.right")
                                         .foregroundColor(Colors.Card.chevron)
@@ -64,7 +56,6 @@ struct MedicalDetail: View {
                         .ignoresSafeArea()
                         
                     }
-                    Spacer()
                     Barcode(name: details.name)
                         .ignoresSafeArea()
                 }
